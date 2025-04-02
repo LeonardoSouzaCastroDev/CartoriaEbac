@@ -43,7 +43,6 @@ int registrar()
 	fprintf(file, "\n");
 	fclose(file);
 	
-	
 	printf("Digite o cargo a ser cadastrado: ");
 	scanf("%s", cargo);
 	
@@ -79,7 +78,7 @@ int consulta()
 
 	while(fgets(conteudo, 200, file) != NULL)
 	{
-			printf("%s", conteudo);
+		printf("%s", conteudo);
 	}
 
 	system("pause");
@@ -281,6 +280,5 @@ int main()
 		printf("\nSenha incorreta!\n\n");
 		system("pause");
 		main();
-	}
-		
+	}	
 }
